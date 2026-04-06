@@ -4,9 +4,15 @@ name = "Builder Context"
 agent_id = "builder"
 
 [frontdoor]
-pinned_paths = ['README.md', 'memory/mission.md']
+pinned_paths = [
+  'README.md',
+  'memory/mission.md',
+  'memory/profiles/builder.md',
+  'memory/findings/current_target.md',
+  'memory/plans/current_build.md'
+]
 discoverable_paths = ['bundles', 'memory', 'artifacts']
 
 [promotion_policy]
-promotable_memory_roots = ['notes', 'plans']
-required_validation_kinds = ['canon-safe', 'frontdoor-reviewed']
+promotable_memory_roots = ['profiles', 'notes', 'plans', 'findings', 'decisions']
+required_validation_kinds = ['canon-safe', 'frontdoor-reviewed', 'build-passing']

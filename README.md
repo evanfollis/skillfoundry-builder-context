@@ -7,4 +7,6 @@ and go, but this context lineage remains the durable working mind.
 ## Front Door
 
 - `memory/mission.md`
-
+- `memory/profiles/builder.md`
+- `memory/findings/current_target.md`
+- `memory/plans/current_build.md`
