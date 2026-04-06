@@ -12,6 +12,12 @@ Ship the first hosted MCP server candidate for Skillfoundry's AgenticMarket laun
 4. Add tests for tool discovery and core happy-path behavior.
 5. Produce deployment and listing-readiness notes.
 
+## Current Implementation Repo
+
+- local repo: `/Users/evanfollis/projects/skillfoundry/bottleneck-radar-server`
+- current status: local implementation scaffold exists with MCP app, tests, and Render deployment config
+- remaining external blockers: deployment credentials and public remote setup
+
 ## Non-goals For V1
 
 - broad workflow orchestration
