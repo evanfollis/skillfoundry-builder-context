@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "bundle_id": "bottleneck-radar-server-spec-v1",
+  "purpose": "Implementation-facing MCP server specification for the first Bottleneck Radar release.",
+  "owners": [
+    {
+      "name": "Skillfoundry Builder",
+      "contact": "agent://builder"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "doc",
+      "locator": "skillfoundry-builder-context://memory/contracts/bottleneck_radar_server_contract.md",
+      "captured_at": "2026-04-06T00:00:00Z",
+      "notes": "Canonical public tool contract for V1."
+    },
+    {
+      "kind": "doc",
+      "locator": "skillfoundry-builder-context://memory/plans/deployment_checklist.md",
+      "captured_at": "2026-04-06T00:00:00Z",
+      "notes": "Deployment and listing readiness constraints."
+    }
+  ],
+  "content": [
+    {
+      "id": "shape",
+      "type": "summary",
+      "body": "Build a hosted HTTPS MCP server with exactly two public tools in V1: `analyze_signals` and `draft_brief`.",
+      "source_refs": [0]
+    },
+    {
+      "id": "analyze-signals",
+      "type": "instruction",
+      "body": "Accept URL or text sources and return ranked bottleneck clusters with evidence snippets, confidence, and next-question hints.",
+      "source_refs": [0]
+    },
+    {
+      "id": "draft-brief",
+      "type": "instruction",
+      "body": "Accept one bottleneck cluster and return a concise builder-oriented product brief including solution shape, constraints, and pricing hypothesis.",
+      "source_refs": [0]
+    },
+    {
+      "id": "launch-constraints",
+      "type": "constraint",
+      "body": "The server must support clean tool discovery, public HTTPS deployment, and a listing whose name, URL, and price are chosen deliberately before publish.",
+      "source_refs": [1]
+    }
+  ],
+  "promotion": {
+    "status": "candidate",
+    "reviewed_at": "2026-04-06T00:00:00Z",
+    "compatibility": "additive",
+    "notes": "First implementation-facing server spec for the Bottleneck Radar launch."
+  }
+}
