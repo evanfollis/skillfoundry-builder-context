@@ -1,11 +1,11 @@
-# Bottleneck Radar Server Contract
+# Bottleneck Radar Mechanism Contract
 
 ## Goal
 
-Implement a hosted MCP server that helps technical builders move from noisy product
+Implement an MCP mechanism that helps technical builders move from noisy product
 signals to ranked bottlenecks and concise opportunity briefs.
 
-## Public Tools
+## Mechanism Tools
 
 ### `analyze_signals`
 
@@ -37,7 +37,7 @@ Outputs:
 
 Purpose:
 
-Turn one selected bottleneck cluster into a concise product brief.
+Turn one selected bottleneck cluster into a concise opportunity brief.
 
 Inputs:
 
@@ -45,7 +45,7 @@ Inputs:
 - `pain_summary`
 - `evidence_snippets`
 - `target_user`
-- `distribution_surface`: default `AgenticMarket`
+- `distribution_surface`: default `chosen distribution surface`
 
 Outputs:
 
@@ -62,7 +62,7 @@ Outputs:
 
 - Return structured JSON-friendly content only.
 - Optimize for clarity and usefulness over novelty.
-- Do not expose more than the two public tools above in V1.
+- Do not expose more than the two mechanism tools above in V1.
 - Keep output small enough to be readable in one client response.
 
 ## Non-goals
@@ -70,4 +70,4 @@ Outputs:
 - full web crawling
 - persistent user accounts
 - internal stateful project management
-- generalized market research beyond the current target use case
+- external launch packaging or pricing work

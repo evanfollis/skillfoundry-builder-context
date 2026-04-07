@@ -1,7 +1,7 @@
 {
   "schema_version": "1.0",
   "bundle_id": "bottleneck-radar-build-input-v1",
-  "purpose": "Builder-side input bundle for implementing the first Skillfoundry AgenticMarket server.",
+  "purpose": "Builder-side input bundle for implementing the first Skillfoundry internal opportunity-discovery mechanism.",
   "owners": [
     {
       "name": "Skillfoundry Builder",
@@ -13,38 +13,38 @@
       "kind": "doc",
       "locator": "skillfoundry-researcher-context://bundles/briefs/bottleneck-radar-brief-v1.json",
       "captured_at": "2026-04-06T00:00:00Z",
-      "notes": "Primary product brief from the researcher context lineage."
+      "notes": "Primary mechanism brief from the researcher context lineage."
     },
     {
       "kind": "doc",
-      "locator": "skillfoundry-researcher-context://artifacts/projections/agenticmarket/bottleneck-radar-listing.md",
+      "locator": "skillfoundry-researcher-context://artifacts/projections/mechanisms/bottleneck-radar-operator-note.md",
       "captured_at": "2026-04-06T00:00:00Z",
-      "notes": "Marketplace-facing positioning and listing draft."
+      "notes": "Operator-facing boundary note and usage guidance."
     }
   ],
   "content": [
     {
       "id": "goal",
       "type": "summary",
-      "body": "Implement `bottleneck-radar` as a narrow hosted MCP server for technical builders using AgenticMarket as the first monetization surface.",
+      "body": "Implement `bottleneck-radar` as a narrow internal MCP mechanism for technical builders and downstream Skillfoundry agents.",
       "source_refs": [0, 1]
     },
     {
       "id": "tool-contract",
       "type": "instruction",
-      "body": "The first release should expose exactly two public tools: `analyze_signals` and `draft_brief`, with structured outputs optimized for quick decision value.",
+      "body": "The first release should expose exactly two mechanism tools: `analyze_signals` and `draft_brief`, with structured outputs optimized for quick decision value.",
       "source_refs": [0]
     },
     {
       "id": "deployment-constraint",
       "type": "constraint",
-      "body": "The implementation must be deployable to a public HTTPS endpoint and support a listing whose name, URL, and per-call price are treated as stable launch choices.",
+      "body": "The implementation must be deployable for internal use and remain clearly separated from external pricing, listing, and public launch concerns.",
       "source_refs": [0, 1]
     },
     {
-      "id": "launch-shape",
+      "id": "handoff-shape",
       "type": "example",
-      "body": "Launch unlisted first on AgenticMarket with a conservative initial price hypothesis and a README-quality long description derived from the listing draft.",
+      "body": "Use the mechanism to produce cleaner opportunity briefs, then hand those briefs into later product, pricing, and launch work.",
       "source_refs": [1]
     }
   ],
@@ -52,6 +52,6 @@
     "status": "candidate",
     "reviewed_at": "2026-04-06T00:00:00Z",
     "compatibility": "additive",
-    "notes": "Initial build input bundle derived from the first researcher brief and listing draft."
+    "notes": "Initial build input bundle derived from the first researcher mechanism brief and operator note."
   }
 }
