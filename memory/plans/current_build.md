@@ -2,34 +2,34 @@
 
 ## Goal
 
-Ship the first internal MCP mechanism candidate for Skillfoundry's opportunity
-selection loop.
+Ship the first external MCP product candidate for Skillfoundry's AgenticMarket launch
+lane.
 
 ## Immediate Work
 
-1. Translate the current target into a concrete MCP tool contract.
-2. Choose the implementation stack and deployment shape.
-3. Define request and response schemas for `analyze_signals` and `draft_brief`.
-4. Add tests for tool discovery and core happy-path behavior.
-5. Produce deployment and operator-readiness notes.
+1. Translate the current target into a concrete MCP product contract.
+2. Implement the V1 tool surface for `audit_launch_readiness` and `draft_launch_package`.
+3. Add tests for tool discovery and representative builder-facing outputs.
+4. Produce deployment and listing-readiness notes.
+5. Keep the product implementation clearly separated from internal mechanisms.
 
 ## Current Implementation Repo
 
 - local repo: `/Users/evanfollis/projects/skillfoundry/skillfoundry-products`
-- mechanism path: `mechanisms/bottleneck-radar`
-- current status: local implementation scaffold exists with MCP app, tests, and a simple hosted deployment config
-- remaining blockers: finalize internal deployment posture and wire the monorepo remote
+- product path: `products/launchpad-lint`
+- current status: implementation scaffold is being created in the products monorepo
+- remaining blockers: deploy the candidate publicly and validate install-to-first-value
 
 ## Non-goals For V1
 
 - broad workflow orchestration
-- more than two mechanism tools
-- external pricing or listing work before a downstream product is selected
+- more than two public tools
+- generalized launch automation outside the chosen ICP
+- solving every marketplace edge case in the first release
 
 ## Validation Bar
 
 - `tools/list` is stable and legible
-- example calls return structured, decision-useful output
-- deployment path to an internal or shared-secret HTTPS endpoint is straightforward
-- the resulting server produces briefs clean enough to feed later product work without
-  copy drift
+- example calls return structured, launch-useful output
+- deployment path to a public HTTPS endpoint is straightforward
+- the resulting server can support an AgenticMarket listing without obvious copy drift

@@ -1,0 +1,57 @@
+{
+  "schema_version": "1.0",
+  "bundle_id": "launchpad-lint-build-input-v1",
+  "purpose": "Builder-side input bundle for implementing the first external Skillfoundry product candidate.",
+  "owners": [
+    {
+      "name": "Skillfoundry Builder",
+      "contact": "agent://builder"
+    }
+  ],
+  "sources": [
+    {
+      "kind": "doc",
+      "locator": "skillfoundry-designer-context://bundles/briefs/launchpad-lint-brief-v1.json",
+      "captured_at": "2026-04-06T00:00:00Z",
+      "notes": "Primary design brief for the first external product candidate."
+    },
+    {
+      "kind": "doc",
+      "locator": "skillfoundry-designer-context://memory/decisions/first_external_product_candidate.md",
+      "captured_at": "2026-04-06T00:00:00Z",
+      "notes": "Decision rationale for choosing launchpad-lint."
+    }
+  ],
+  "content": [
+    {
+      "id": "goal",
+      "type": "summary",
+      "body": "Implement `launchpad-lint` as a narrow external MCP product for technical builders preparing their first public marketplace launch.",
+      "source_refs": [0, 1]
+    },
+    {
+      "id": "tool-contract",
+      "type": "instruction",
+      "body": "Keep V1 narrow with exactly two public tools: `audit_launch_readiness` and `draft_launch_package`.",
+      "source_refs": [0]
+    },
+    {
+      "id": "deployment-constraint",
+      "type": "constraint",
+      "body": "The product must be deployable to a stable public HTTPS endpoint and usable in a one-session install-to-first-value test on AgenticMarket.",
+      "source_refs": [0, 1]
+    },
+    {
+      "id": "quality-bar",
+      "type": "instruction",
+      "body": "Outputs must be concrete and useful to builders, not generic marketing filler, and they should require only light editing before launch.",
+      "source_refs": [0]
+    }
+  ],
+  "promotion": {
+    "status": "candidate",
+    "reviewed_at": "2026-04-06T00:00:00Z",
+    "compatibility": "additive",
+    "notes": "Initial build input bundle for the first external product candidate."
+  }
+}

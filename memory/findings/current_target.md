@@ -1,24 +1,26 @@
 # Current Target
 
-## Mechanism
+## Product
 
-`bottleneck-radar`
+`launchpad-lint`
 
 ## Source Brief
 
-- primary brief: `skillfoundry-researcher-context://bundles/briefs/bottleneck-radar-brief-v1.json`
-- operator note: `skillfoundry-researcher-context://artifacts/projections/mechanisms/bottleneck-radar-operator-note.md`
+- primary brief: `skillfoundry-designer-context://bundles/briefs/launchpad-lint-brief-v1.json`
+- candidate decision: `skillfoundry-designer-context://memory/decisions/first_external_product_candidate.md`
 
 ## Build Goal
 
-Implement a narrow internal MCP mechanism with two initial tools:
+Implement the first external Skillfoundry MCP product with two initial tools:
 
-- `analyze_signals`
-- `draft_brief`
+- `audit_launch_readiness`
+- `draft_launch_package`
 
 ## Constraints
 
-- Tool discovery and descriptions must be clear enough for downstream agent use.
-- Internal deployment may be local-first or hosted behind a shared secret.
-- External pricing and listing assumptions are out of scope for this mechanism.
+- Tool discovery and descriptions must be clear enough for real marketplace users.
+- The product should stay narrow and legible enough to validate in one session.
+- Output must be useful without collapsing into generic marketing filler.
+- Public launch assumptions should align to AgenticMarket as the first external
+  distribution surface.
 - The first version should optimize for narrow usefulness over breadth.
