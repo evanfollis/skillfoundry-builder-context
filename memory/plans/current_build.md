@@ -17,8 +17,9 @@ lane.
 
 - local repo: `/Users/evanfollis/projects/skillfoundry/skillfoundry-products`
 - product path: `products/launchpad-lint`
-- current status: implementation scaffold is being created in the products monorepo
-- remaining blockers: deploy the candidate publicly and validate install-to-first-value
+- current status: product is deployed for preview at `https://launchpad.synaplex.ai`
+- remaining blockers: top up AgenticMarket, validate one real two-call activation path,
+  and switch to `AGENTICMARKET_SECRET` after marketplace approval
 
 ## Non-goals For V1
 
